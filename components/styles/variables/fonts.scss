@@ -1,0 +1,236 @@
+$font: 'Albert Sans',
+sans-serif;
+
+@font-face {
+    font-family: 'Albert Sans';
+    src: url('../fonts/AlbertSans-Black.eot');
+    src: url('../fonts/AlbertSans-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AlbertSans-Black.woff2') format('woff2'),
+        url('../fonts/AlbertSans-Black.woff') format('woff'),
+        url('../fonts/AlbertSans-Black.ttf') format('truetype'),
+        url('../fonts/AlbertSans-Black.svg#AlbertSans-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albert Sans';
+    src: url('../fonts/AlbertSans-BoldItalic.eot');
+    src: url('../fonts/AlbertSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AlbertSans-BoldItalic.woff2') format('woff2'),
+        url('../fonts/AlbertSans-BoldItalic.woff') format('woff'),
+        url('../fonts/AlbertSans-BoldItalic.ttf') format('truetype'),
+        url('../fonts/AlbertSans-BoldItalic.svg#AlbertSans-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albert Sans';
+    src: url('../fonts/AlbertSans-ExtraBoldItalic.eot');
+    src: url('../fonts/AlbertSans-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AlbertSans-ExtraBoldItalic.woff2') format('woff2'),
+        url('../fonts/AlbertSans-ExtraBoldItalic.woff') format('woff'),
+        url('../fonts/AlbertSans-ExtraBoldItalic.ttf') format('truetype'),
+        url('../fonts/AlbertSans-ExtraBoldItalic.svg#AlbertSans-ExtraBoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albert Sans';
+    src: url('../fonts/AlbertSans-Bold.eot');
+    src: url('../fonts/AlbertSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AlbertSans-Bold.woff2') format('woff2'),
+        url('../fonts/AlbertSans-Bold.woff') format('woff'),
+        url('../fonts/AlbertSans-Bold.ttf') format('truetype'),
+        url('../fonts/AlbertSans-Bold.svg#AlbertSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albert Sans';
+    src: url('../fonts/AlbertSans-ExtraLight.eot');
+    src: url('../fonts/AlbertSans-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AlbertSans-ExtraLight.woff2') format('woff2'),
+        url('../fonts/AlbertSans-ExtraLight.woff') format('woff'),
+        url('../fonts/AlbertSans-ExtraLight.ttf') format('truetype'),
+        url('../fonts/AlbertSans-ExtraLight.svg#AlbertSans-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albert Sans';
+    src: url('../fonts/AlbertSans-ExtraBold.eot');
+    src: url('../fonts/AlbertSans-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AlbertSans-ExtraBold.woff2') format('woff2'),
+        url('../fonts/AlbertSans-ExtraBold.woff') format('woff'),
+        url('../fonts/AlbertSans-ExtraBold.ttf') format('truetype'),
+        url('../fonts/AlbertSans-ExtraBold.svg#AlbertSans-ExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albert Sans';
+    src: url('../fonts/AlbertSans-BlackItalic.eot');
+    src: url('../fonts/AlbertSans-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AlbertSans-BlackItalic.woff2') format('woff2'),
+        url('../fonts/AlbertSans-BlackItalic.woff') format('woff'),
+        url('../fonts/AlbertSans-BlackItalic.ttf') format('truetype'),
+        url('../fonts/AlbertSans-BlackItalic.svg#AlbertSans-BlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albert Sans';
+    src: url('../fonts/AlbertSans-ExtraLightItalic.eot');
+    src: url('../fonts/AlbertSans-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AlbertSans-ExtraLightItalic.woff2') format('woff2'),
+        url('../fonts/AlbertSans-ExtraLightItalic.woff') format('woff'),
+        url('../fonts/AlbertSans-ExtraLightItalic.ttf') format('truetype'),
+        url('../fonts/AlbertSans-ExtraLightItalic.svg#AlbertSans-ExtraLightItalic') format('svg');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albert Sans';
+    src: url('../fonts/AlbertSans-MediumItalic.eot');
+    src: url('../fonts/AlbertSans-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AlbertSans-MediumItalic.woff2') format('woff2'),
+        url('../fonts/AlbertSans-MediumItalic.woff') format('woff'),
+        url('../fonts/AlbertSans-MediumItalic.ttf') format('truetype'),
+        url('../fonts/AlbertSans-MediumItalic.svg#AlbertSans-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albert Sans';
+    src: url('../fonts/AlbertSans-Regular.eot');
+    src: url('../fonts/AlbertSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AlbertSans-Regular.woff2') format('woff2'),
+        url('../fonts/AlbertSans-Regular.woff') format('woff'),
+        url('../fonts/AlbertSans-Regular.ttf') format('truetype'),
+        url('../fonts/AlbertSans-Regular.svg#AlbertSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albert Sans';
+    src: url('../fonts/AlbertSans-Italic.eot');
+    src: url('../fonts/AlbertSans-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AlbertSans-Italic.woff2') format('woff2'),
+        url('../fonts/AlbertSans-Italic.woff') format('woff'),
+        url('../fonts/AlbertSans-Italic.ttf') format('truetype'),
+        url('../fonts/AlbertSans-Italic.svg#AlbertSans-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albert Sans';
+    src: url('../fonts/AlbertSans-SemiBoldItalic.eot');
+    src: url('../fonts/AlbertSans-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AlbertSans-SemiBoldItalic.woff2') format('woff2'),
+        url('../fonts/AlbertSans-SemiBoldItalic.woff') format('woff'),
+        url('../fonts/AlbertSans-SemiBoldItalic.ttf') format('truetype'),
+        url('../fonts/AlbertSans-SemiBoldItalic.svg#AlbertSans-SemiBoldItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albert Sans';
+    src: url('../fonts/AlbertSans-Light.eot');
+    src: url('../fonts/AlbertSans-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AlbertSans-Light.woff2') format('woff2'),
+        url('../fonts/AlbertSans-Light.woff') format('woff'),
+        url('../fonts/AlbertSans-Light.ttf') format('truetype'),
+        url('../fonts/AlbertSans-Light.svg#AlbertSans-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albert Sans';
+    src: url('../fonts/AlbertSans-Thin.eot');
+    src: url('../fonts/AlbertSans-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AlbertSans-Thin.woff2') format('woff2'),
+        url('../fonts/AlbertSans-Thin.woff') format('woff'),
+        url('../fonts/AlbertSans-Thin.ttf') format('truetype'),
+        url('../fonts/AlbertSans-Thin.svg#AlbertSans-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albert Sans';
+    src: url('../fonts/AlbertSans-SemiBold.eot');
+    src: url('../fonts/AlbertSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AlbertSans-SemiBold.woff2') format('woff2'),
+        url('../fonts/AlbertSans-SemiBold.woff') format('woff'),
+        url('../fonts/AlbertSans-SemiBold.ttf') format('truetype'),
+        url('../fonts/AlbertSans-SemiBold.svg#AlbertSans-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albert Sans';
+    src: url('../fonts/AlbertSans-LightItalic.eot');
+    src: url('../fonts/AlbertSans-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AlbertSans-LightItalic.woff2') format('woff2'),
+        url('../fonts/AlbertSans-LightItalic.woff') format('woff'),
+        url('../fonts/AlbertSans-LightItalic.ttf') format('truetype'),
+        url('../fonts/AlbertSans-LightItalic.svg#AlbertSans-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albert Sans';
+    src: url('../fonts/AlbertSans-ThinItalic.eot');
+    src: url('../fonts/AlbertSans-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AlbertSans-ThinItalic.woff2') format('woff2'),
+        url('../fonts/AlbertSans-ThinItalic.woff') format('woff'),
+        url('../fonts/AlbertSans-ThinItalic.ttf') format('truetype'),
+        url('../fonts/AlbertSans-ThinItalic.svg#AlbertSans-ThinItalic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albert Sans';
+    src: url('../fonts/AlbertSans-Medium.eot');
+    src: url('../fonts/AlbertSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AlbertSans-Medium.woff2') format('woff2'),
+        url('../fonts/AlbertSans-Medium.woff') format('woff'),
+        url('../fonts/AlbertSans-Medium.ttf') format('truetype'),
+        url('../fonts/AlbertSans-Medium.svg#AlbertSans-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}

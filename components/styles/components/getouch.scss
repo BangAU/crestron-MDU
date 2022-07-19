@@ -1,0 +1,64 @@
+.getouch {
+    padding: 140px 0 110px;
+
+    &__row {
+        align-items: center;
+    }
+
+    &__col {
+        &--text {
+            padding-right: 82px;
+        }
+    }
+
+    &__title {
+        font-size: 72px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    &__desc {
+        max-width: 374px;
+    }
+
+    &__media {
+        position: relative;
+        width: 619px;
+        height: 734px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 20.29%;
+            left: 8.4%;
+            width: 322px;
+            height: 493px;
+            background-color: $text-theme;
+            background-image: linear-gradient(to right, $text-theme 50%, $theme 50%);
+        }
+
+        img {
+            position: absolute;
+
+            &:first-child {
+                top: 0;
+                right: 0;
+                width: 84.3%;
+                height: 44.68%;
+            }
+
+            &:last-child {
+                bottom: 0;
+                left: 0;
+                width: 51.5%;
+                height: 65.12%;
+            }
+        }
+    }
+
+    &__form {
+        max-width: 474px;
+        width: 100%;
+        margin-top: 51px;
+    }
+}

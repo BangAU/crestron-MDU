@@ -1,0 +1,36 @@
+$theme: #004A80;
+$theme-light: #347B9C;
+
+$black: #1C1C1C;
+$white: #fff;
+
+$gray: #E3E3E3;
+
+$text: $black;
+$text-theme: #007CA0;
+
+
+$color-map: (theme: $theme, theme-light: $theme-light, black: $black, white: $white, gray: $gray, text: $text, text-theme: $text-theme);
+
+@each $name,
+$color in $color-map {
+    .color-#{$name} {
+        color: $color !important;
+    }
+
+    .bg-#{$name} {
+        background: $color !important;
+    }
+
+    .btn--#{$name} {
+        color: #fff;
+        background: $color;
+        border-color: $color;
+
+        &:hover {
+            color: #fff;
+            background: darken($color, 8%);
+            border-color: darken($color, 8%);
+        }
+    }
+}

@@ -1,0 +1,135 @@
+.mleasy {
+    overflow-x: hidden;
+
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .scroll__horizantal {
+        padding: 120px 325px 60px 183px;
+    }
+
+    &__section {
+        position: relative;
+
+        &--1 {
+            width: 1441px;
+            height: 950px;
+        }
+
+        &--2 {
+            width: 2461px;
+            height: 773px;
+            margin-left: -210px;
+        }
+    }
+
+    &__content {
+
+        &--1,
+        &--2 {
+            position: absolute;
+        }
+
+        &--1 {
+            top: 0;
+            left: 0;
+            width: 300px;
+        }
+
+        &--2 {
+            bottom: 59px;
+            right: 0;
+            width: 640px;
+        }
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    &__media {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 1010px;
+        height: 893px;
+
+        &-1,
+        &-2,
+        &-devices {
+            position: absolute;
+        }
+
+        &-1 {
+            z-index: 1;
+            top: 0;
+            right: 288px;
+            width: 336px;
+        }
+
+        &-2 {
+            bottom: 0;
+            left: 0;
+            width: 554px;
+        }
+
+        &-devices {
+            z-index: 2;
+            top: 39px;
+            right: 0;
+        }
+    }
+
+    &__lgtext {
+        font-size: 72px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    &__content {
+        &--3 {
+            position: relative;
+            width: 100%;
+            height: 100%;
+
+            .mleasy__lgtext {
+                z-index: 1;
+                position: absolute;
+                margin-bottom: 0;
+
+                &:nth-child(1) {
+                    top: 97px;
+                }
+
+                &:nth-child(2) {
+                    color: #fff;
+                    top: 360px;
+                    left: 50%;
+                    transform: translateX(-54%);
+                }
+
+                &:nth-child(3) {
+                    bottom: 0px;
+                    right: 0px;
+                }
+            }
+
+            .mleasy__content-mobile {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 383px;
+            }
+        }
+    }
+}
+
+.scroll__horizantal {
+    display: flex;
+    width: 4009px;
+}

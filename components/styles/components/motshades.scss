@@ -1,0 +1,32 @@
+.motshades {
+    padding: 0 0 120px;
+
+    &__cont {
+        display: flex;
+    }
+
+    &__title,
+    &__desc {}
+
+    &__title {
+        font-size: 72px;
+        font-weight: 300;
+        line-height: 1;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: -12px;
+
+        span {
+            display: block;
+        }
+    }
+
+    &__desc {
+        width: 50%;
+        padding-top: 125px;
+
+        >*:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

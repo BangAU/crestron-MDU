@@ -1,0 +1,54 @@
+.speaklang-cta {
+    padding: 78px 0 122px;
+
+    &__row {
+        margin: 0;
+        align-items: stretch;
+    }
+
+    &__col {
+        &--text {
+            color: #fff;
+            background-color: $theme;
+            padding: 44px 48px 38px;
+        }
+
+        &--media {
+            padding: 0;
+            min-height: 293px;
+
+            img {
+                display: block;
+                @include imgfit;
+            }
+        }
+    }
+
+    &__text {
+        display: flex;
+        flex-flow: column;
+        height: 100%;
+    }
+
+    &__title {
+        font-size: 38px;
+        font-weight: 300;
+        margin-bottom: 0;
+    }
+
+    &__link {
+        display: flex;
+        font-size: 18px;
+        font-weight: 400;
+        font-style: italic;
+        margin-top: auto;
+        align-self: flex-end;
+
+        img {
+            align-self: flex-start;
+            display: block;
+            width: 17px;
+            margin-right: 10px;
+        }
+    }
+}

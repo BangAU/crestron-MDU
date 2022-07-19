@@ -1,0 +1,67 @@
+.homebanner {
+    position: relative;
+    padding: 0;
+    height: 100vh;
+    min-height: 450px;
+    max-height: 950px;
+
+    &__bg {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        filter: blur(11px) brightness(118%);
+        transition: all 1s ease-out;
+
+        img {
+            display: block;
+            @include imgfit;
+        }
+    }
+
+    &.unblur &__bg {
+        filter: none
+    }
+
+    &__text {
+        @include absolcenter;
+        text-align: center;
+        width: 100%;
+
+        .container {
+            @media (min-width: 768px) {
+                padding: 0;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 72px;
+        font-weight: 300;
+        line-height: 1;
+        text-transform: uppercase;
+        margin: 16px 0;
+    }
+
+    &__desc {
+        font-size: 18px;
+        font-weight: 300;
+        text-transform: uppercase;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    .scroll-down {
+        position: absolute;
+        bottom: 50px;
+        right: 55px;
+        width: 20px;
+        cursor: pointer;
+
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+}

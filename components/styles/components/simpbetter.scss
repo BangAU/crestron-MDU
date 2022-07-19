@@ -1,0 +1,109 @@
+.simpbetter {
+    padding: 78px 0 30px;
+
+    .container {
+        @media (min-width: 992px) {
+            padding: 0 92px;
+        }
+    }
+
+    &__textblock {
+        position: relative;
+        width: 100%;
+        max-width: 665px;
+        color: #fff;
+        background-color: $theme;
+        padding: 37px 91px 51px 57px;
+
+        &::before {
+            content: "";
+            z-index: -1;
+            position: absolute;
+            top: -30px;
+            left: -23px;
+            width: 202px;
+            height: 100%;
+            background-color: $gray;
+        }
+
+        >*:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__title {
+        font-size: 38px;
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+
+    &__slider {
+        padding-bottom: 42px;
+
+        &-wrap {
+            position: relative;
+            margin-top: -44px;
+
+            .slider-nav {
+
+                .prev,
+                .next {
+                    z-index: 9;
+                    position: absolute;
+                    cursor: pointer;
+                }
+
+                .prev {
+                    top: 0;
+                    left: 30%;
+                    filter: brightness(0) invert(1);
+                }
+
+                .next {
+                    bottom: 0;
+                    left: 62.5%;
+                }
+            }
+        }
+
+        .slick {
+            &-list {
+                margin: 0 -11px;
+                min-height: 542px;
+            }
+
+            &-track {
+                display: flex;
+                align-items: center;
+            }
+
+            &-slide {
+                padding: 0 11px;
+                height: 542px;
+                transition: all .3s ease-out;
+
+                &:not(.slick-active) {
+                    opacity: 0
+                }
+
+                img {
+                    @include imgfit;
+                }
+
+                &.size {
+                    &-sm {
+                        height: 272px;
+                    }
+
+                    &-md {
+                        height: 356px;
+                    }
+
+                    &-lg {
+                        height: 542px;
+                    }
+                }
+            }
+        }
+    }
+}

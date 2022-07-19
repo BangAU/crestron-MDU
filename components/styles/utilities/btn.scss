@@ -1,0 +1,16 @@
+.btn-theme {
+    font-family: $font;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    display: inline-block;
+    padding: 16px 49px 15px;
+    color: #fff;
+    background-color: $theme;
+    border-radius: 7px;
+    transition: ease-out 0.4s;
+
+    &:hover {
+        color: #fff;
+    }
+}

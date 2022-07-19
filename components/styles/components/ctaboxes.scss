@@ -1,0 +1,110 @@
+.ctaboxes {
+    padding: 109.5px 0 72px;
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 7px 7px;
+        grid-template-areas:
+            "ctaboxes__item--1 ctaboxes__item--3"
+            "ctaboxes__item--2 ctaboxes__item--3";
+        height: 642px;
+    }
+
+    &__item {
+        position: relative;
+        border-radius: 7px;
+        overflow: hidden;
+
+        &--1 {
+            grid-area: ctaboxes__item--1;
+        }
+
+        &--2 {
+            grid-area: ctaboxes__item--2;
+
+            .ctaboxes__item-text {
+                padding-top: 44px;
+            }
+        }
+
+        &--3 {
+            grid-area: ctaboxes__item--3;
+
+            .ctaboxes__item-text {
+                padding: 60px 60px 42px;
+            }
+        }
+
+        &-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            img {
+                display: block;
+                @include imgfit;
+            }
+        }
+
+        &-text {
+            display: flex;
+            flex-flow: column;
+            z-index: 1;
+            position: relative;
+            height: 100%;
+            padding: 52px 54px;
+            color: #fff;
+            background-color: rgba(#000, .57);
+        }
+    }
+
+    &__title {
+        font-size: 32px;
+
+        &--lg {
+            font-size: 48px;
+        }
+
+        &--xl {
+            font-size: 66px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 17px;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+    }
+
+    &__link {
+        display: flex;
+        align-items: flex-end;
+        margin-top: auto;
+        outline: none;
+
+        .icon {
+            display: block;
+            width: 33px;
+            margin-right: 16px;
+
+            &--play {
+                width: 48px;
+            }
+        }
+
+        .text {
+            display: block;
+            letter-spacing: 3px;
+            font-size: 18px;
+            font-weight: 300;
+            text-transform: uppercase;
+            padding-bottom: 6.4px;
+            border-bottom: .5px solid #fff;
+        }
+    }
+
+}
