@@ -27,6 +27,10 @@
     &--submit {
         margin-top: 70px;
 
+        @media (max-width: 767px) {
+            margin-top: 40px;
+        }
+
         input[type="submit"],
         button[type="submit"] {
             font-family: $font;
@@ -41,6 +45,11 @@
             border: 0;
             min-width: 287px;
             outline: none;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $theme-light;
+            }
         }
     }
 }

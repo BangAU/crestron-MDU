@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function () {
     scrollDownBtn()
     simpbetterSlider()
     scrollMagicInit()
-
 });
 
 //function called on window resize
@@ -203,10 +202,17 @@ function simpbetterSlider() {
         slidesToScroll: 1,
         // variableWidth: true,
         draggable: false,
-        // centerMode: true,
+        centerMode: true,
         prevArrow: prev,
         nextArrow: next,
-        asNavFor: '.simpbetter__textblock-slider'
+        asNavFor: '.simpbetter__textblock-slider',
+        responsive: [{
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1
+            }
+        }]
     });
 
     textSlider.slick({

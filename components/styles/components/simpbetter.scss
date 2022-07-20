@@ -15,6 +15,11 @@
         background-color: $theme;
         padding: 37px 91px 51px 57px;
 
+        @media (max-width: 991px) {
+            max-width: 100%;
+            padding: 36px 36px 62px;
+        }
+
         &::before {
             content: "";
             z-index: -1;
@@ -35,6 +40,10 @@
         font-size: 38px;
         font-weight: 300;
         margin-bottom: 10px;
+
+        @media (max-width: 991px) {
+            font-size: 28px;
+        }
     }
 
     &__slider {
@@ -43,6 +52,10 @@
         &-wrap {
             position: relative;
             margin-top: -44px;
+
+            @media (max-width: 991px) {
+                overflow: hidden;
+            }
 
             .slider-nav {
 
@@ -57,19 +70,49 @@
                     top: 0;
                     left: 30%;
                     filter: brightness(0) invert(1);
+
+                    @media (max-width: 991px) {
+                        left: 10px;
+                    }
                 }
 
                 .next {
                     bottom: 0;
                     left: 62.5%;
+
+                    @media (max-width: 1400px) {
+                        left: 60%;
+                    }
+
+                    @media (max-width: 991px) {
+                        left: auto;
+                        right: 10px;
+                    }
                 }
             }
         }
 
         .slick {
             &-list {
+                padding: 0 !important;
                 margin: 0 -11px;
                 min-height: 542px;
+
+                @media (max-width: 1400px) {
+                    min-height: 480px;
+                }
+
+                @media (max-width: 991px) {
+                    min-height: 420px;
+                    // width: 520px;
+                    max-width: 100%;
+                    overflow: visible;
+                    @include margin-auto;
+                }
+
+                @media (max-width: 567px) {
+                    min-height: 320px;
+                }
             }
 
             &-track {
@@ -78,30 +121,121 @@
             }
 
             &-slide {
-                padding: 0 11px;
+                padding: 0 11px !important;
                 height: 542px;
                 transition: all .5s ease-out;
 
-                &.slick {
-                    &-current {
-                        width: 202.117px !important;
-                        height: 272px;
+                @media (max-width: 1400px) {
+                    height: 480px;
+                }
 
+                @media (max-width: 991px) {
+                    height: 420px;
+                }
+
+                @media (max-width: 567px) {
+                    height: 320px;
+                }
+
+                &.slick {
+                    &-slide:not(.slick-active) {
                         +.slick-active {
-                            width: 236.967px !important;
-                            height: 356px;
+                            @media (min-width: 1401px) {
+                                width: 202.117px !important;
+                                height: 272px;
+                            }
+
+                            @media (max-width: 1400px) and (min-width: 992px) {
+                                width: 160px !important;
+                                height: 220px;
+                            }
 
                             +.slick-active {
-                                width: 393.833px !important;
-                                height: 542px;
-
-                                +.slick-active {
+                                @media (min-width: 1401px) {
                                     width: 236.967px !important;
                                     height: 356px;
+                                }
+
+                                @media (max-width: 1400px) and (min-width: 992px) {
+                                    width: 180px !important;
+                                    height: 280px;
+                                }
+
+                                +.slick-active {
+                                    @media (min-width: 1401px) {
+                                        width: 393.833px !important;
+                                        height: 542px;
+                                    }
+
+                                    @media (max-width: 1400px) and (min-width: 992px) {
+                                        width: 320px !important;
+                                        height: 480px;
+                                    }
 
                                     +.slick-active {
-                                        width: 202.117px !important;
-                                        height: 272px;
+                                        @media (min-width: 1401px) {
+                                            width: 236.967px !important;
+                                            height: 356px;
+                                        }
+
+                                        @media (max-width: 1400px) and (min-width: 992px) {
+                                            width: 180px !important;
+                                            height: 280px;
+                                        }
+
+                                        +.slick-active {
+                                            @media (min-width: 1401px) {
+                                                width: 202.117px !important;
+                                                height: 272px;
+                                            }
+
+                                            @media (max-width: 1400px) and (min-width: 992px) {
+                                                width: 160px !important;
+                                                height: 220px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &-slide {
+                        // width: 155px !important;
+                    }
+
+                    &-slide:not(.slick-active) {
+                        +.slick-active {
+                            @media (max-width: 991px) {
+                                width: 155px !important;
+                                height: 220px;
+                            }
+
+                            @media (max-width: 567px) {
+                                width: 120px !important;
+                                height: 160px;
+                            }
+
+                            +.slick-active {
+                                @media (max-width: 991px) {
+                                    width: 380px !important;
+                                    height: 420px;
+                                }
+
+                                @media (max-width: 567px) {
+                                    width: 240px !important;
+                                    height: 320px;
+                                }
+
+                                +.slick-active {
+                                    @media (max-width: 991px) {
+                                        width: 155px !important;
+                                        height: 220px;
+                                    }
+
+                                    @media (max-width: 567px) {
+                                        width: 120px !important;
+                                        height: 160px;
                                     }
                                 }
                             }
@@ -109,26 +243,81 @@
                     }
                 }
 
+                // &.slick {
+                //     &-current {
+                //         @media (min-width: 1401px) {
+                //             width: 202.117px !important;
+                //             height: 272px;
+                //         }
+
+                //         @media (max-width: 1400px) and (min-width: 992px) {
+                //             width: 160px !important;
+                //             height: 220px;
+                //         }
+
+                //         @media (max-width: 991px) {
+                //             height: 65vw !important;
+                //             height: 180px;
+                //         }
+
+                //         +.slick-active {
+                //             @media (min-width: 1401px) {
+                //                 width: 236.967px !important;
+                //                 height: 356px;
+                //             }
+
+                //             @media (max-width: 1400px) and (min-width: 992px) {
+                //                 width: 180px !important;
+                //                 height: 280px;
+                //             }
+
+                //             +.slick-active {
+                //                 @media (min-width: 1401px) {
+                //                     width: 393.833px !important;
+                //                     height: 542px;
+                //                 }
+
+                //                 @media (max-width: 1400px) and (min-width: 992px) {
+                //                     width: 320px !important;
+                //                     height: 480px;
+                //                 }
+
+                //                 +.slick-active {
+                //                     @media (min-width: 1401px) {
+                //                         width: 236.967px !important;
+                //                         height: 356px;
+                //                     }
+
+                //                     @media (max-width: 1400px) and (min-width: 992px) {
+                //                         width: 180px !important;
+                //                         height: 280px;
+                //                     }
+
+                //                     +.slick-active {
+                //                         @media (min-width: 1401px) {
+                //                             width: 202.117px !important;
+                //                             height: 272px;
+                //                         }
+
+                //                         @media (max-width: 1400px) and (min-width: 992px) {
+                //                             width: 160px !important;
+                //                             height: 220px;
+                //                         }
+                //                     }
+                //                 }
+                //             }
+                //         }
+                //     }
+                // }
+
                 &:not(.slick-active) {
-                    opacity: 0
+                    opacity: 0;
+
+                    @media (min-width: 992px) {}
                 }
 
                 img {
                     @include imgfit;
-                }
-
-                &.size {
-                    &-sm {
-                        height: 272px;
-                    }
-
-                    &-md {
-                        height: 356px;
-                    }
-
-                    &-lg {
-                        height: 542px;
-                    }
                 }
             }
         }

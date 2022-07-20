@@ -1,6 +1,12 @@
 .crestory {
     padding: 100px 0 0;
 
+    &__row {
+        @media (max-width: 991px) {
+            margin: 0;
+        }
+    }
+
     &__col {
 
         &--media,
@@ -11,10 +17,22 @@
         &--media {
             position: relative;
             min-height: 871px;
+
+            @media (max-width: 991px) {
+                min-height: auto;
+            }
         }
 
         &--text {
             padding: 91px 0 65px 85px;
+
+            @media (max-width: 991px) {
+                padding: 60px 0 60px 60px;
+            }
+
+            @media (max-width: 767px) {
+                padding: 40px 0;
+            }
         }
     }
 
@@ -25,8 +43,17 @@
         width: 50vw;
         height: 100%;
 
+        @media (max-width: 991px) {
+            position: relative;
+            top: auto;
+            right: auto;
+            width: 100%;
+            height: 420px;
+        }
+
         img {
             @include imgfit;
+            display: block;
         }
     }
 
@@ -34,6 +61,11 @@
         color: $text-theme;
         font-size: 72px;
         margin-bottom: 83px;
+
+        @media (max-width: 991px) {
+            font-size: 48px;
+            margin-bottom: 40px;
+        }
     }
 
     &__subtitle {

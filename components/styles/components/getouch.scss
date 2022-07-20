@@ -1,13 +1,19 @@
 .getouch {
     padding: 140px 0 110px;
 
+    @media (max-width: 991px) {
+        padding: 0;
+    }
+
     &__row {
         align-items: center;
     }
 
     &__col {
         &--text {
-            padding-right: 82px;
+            @media (min-width: 992px) {
+                padding-right: 82px;
+            }
         }
     }
 
@@ -15,6 +21,10 @@
         font-size: 72px;
         text-transform: uppercase;
         margin-bottom: 10px;
+
+        @media (max-width: 991px) {
+            font-size: 36px;
+        }
     }
 
     &__desc {
@@ -26,6 +36,14 @@
         width: 619px;
         height: 734px;
 
+        @media (max-width: 767px) {
+            max-width: 100%;
+            width: 520px;
+            height: 580px;
+            @include margin-auto;
+            margin-top: 40px;
+        }
+
         &::before {
             content: "";
             position: absolute;
@@ -35,10 +53,16 @@
             height: 493px;
             background-color: $text-theme;
             background-image: linear-gradient(to right, $text-theme 50%, $theme 50%);
+
+            @media (max-width: 767px) {
+                width: 280px;
+                height: 400px;
+            }
         }
 
         img {
             position: absolute;
+            object-fit: cover;
 
             &:first-child {
                 top: 0;

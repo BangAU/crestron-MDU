@@ -1,11 +1,21 @@
 .reviewsec {
     padding: 73px 0 160px;
 
+    @media (max-width: 991px) {
+        padding: 60px 0;
+    }
+
     &__col {
         &--media {
-            padding-top: 107px;
-            padding-left: 68px;
-            padding-right: 62px;
+            @media (min-width: 992px) {
+                padding-top: 107px;
+                padding-left: 68px;
+                padding-right: 62px;
+            }
+
+            @media (max-width: 991px) {
+                margin-bottom: 50px;
+            }
         }
     }
 
@@ -28,6 +38,10 @@
         width: 100%;
         padding: 0 38px;
 
+        @media (max-width: 767px) {
+            padding: 0 16px;
+        }
+
         &-text {
             display: block;
             font-size: 21px;
@@ -37,6 +51,12 @@
             background-color: $theme;
             padding: 32px 90px 32px 30px;
             border-radius: 225px;
+
+            @media (max-width: 767px) {
+                font-size: 18px;
+                width: calc(100% - 20px);
+                padding: 20px 90px 20px 20px;
+            }
         }
 
         &-media {
@@ -49,12 +69,21 @@
             border-radius: 50%;
             border: 12px solid $theme;
             box-shadow: 0 3px 20px rgba(#A7A7A7, .4);
+
+            @media (max-width: 767px) {
+                width: 90px;
+                height: 90px;
+            }
         }
     }
 
     &__text {
         color: $theme-light;
         padding-left: 40px;
+
+        @media (max-width: 991px) {
+            padding-left: 0;
+        }
     }
 
     &__desc {
@@ -71,17 +100,28 @@
         &::before {
             content: '“';
             margin-bottom: -45px;
+
+            @media (max-width: 991px) {}
         }
 
         &::after {
             content: '“';
             margin-top: -18px;
             transform: rotate(180deg);
+
+            @media (max-width: 991px) {
+                margin-top: -35px;
+            }
         }
 
         p {
             font-size: 28px;
             line-height: 43px;
+
+            @media (max-width: 991px) {
+                font-size: 20px;
+                line-height: 35px;
+            }
 
             &:last-child {
                 margin-bottom: 0;
