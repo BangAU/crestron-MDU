@@ -80,7 +80,34 @@
             &-slide {
                 padding: 0 11px;
                 height: 542px;
-                transition: all .3s ease-out;
+                transition: all .5s ease-out;
+
+                &.slick {
+                    &-current {
+                        width: 202.117px !important;
+                        height: 272px;
+
+                        +.slick-active {
+                            width: 236.967px !important;
+                            height: 356px;
+
+                            +.slick-active {
+                                width: 393.833px !important;
+                                height: 542px;
+
+                                +.slick-active {
+                                    width: 236.967px !important;
+                                    height: 356px;
+
+                                    +.slick-active {
+                                        width: 202.117px !important;
+                                        height: 272px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
 
                 &:not(.slick-active) {
                     opacity: 0

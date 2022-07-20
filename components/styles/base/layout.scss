@@ -16,7 +16,6 @@ body {
 .container {
     max-width: 1434px;
     padding: 0 69px;
-
     @include margin-auto;
 
     @media (max-width: 1400px) {

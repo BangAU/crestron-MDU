@@ -1,16 +1,21 @@
-.btn-theme {
-    font-family: $font;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24px;
-    display: inline-block;
-    padding: 16px 49px 15px;
-    color: #fff;
-    background-color: $theme;
-    border-radius: 7px;
-    transition: ease-out 0.4s;
+.btn {
+    &--transp {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 212px;
+        height: 45px;
+        padding: 15px 25px;
+        border: 1px solid $black;
+        font-size: 10px;
+        font-weight: 300;
+        text-transform: uppercase;
+        transition: all .3s ease-out;
 
-    &:hover {
-        color: #fff;
+        &:hover {
+            color: #fff;
+            background-color: $theme;
+            border-color: $theme;
+        }
     }
 }
