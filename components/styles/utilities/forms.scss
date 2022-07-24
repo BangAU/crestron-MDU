@@ -1,4 +1,5 @@
-.formfield {
+.formfield,
+.form-field {
     margin-bottom: 30px;
 
     input {
@@ -23,33 +24,33 @@
             opacity: 1;
         }
     }
+}
+.formfield--submit,
+.submit {
+    margin-top: 70px;
 
-    &--submit {
-        margin-top: 70px;
+    @media (max-width: 767px) {
+        margin-top: 40px;
+    }
 
-        @media (max-width: 767px) {
-            margin-top: 40px;
-        }
+    input[type="submit"],
+    button[type="submit"] {
+        font-family: $font;
+        font-size: 21px;
+        font-weight: 300;
+        padding: 17.5px 38px;
+        text-align: left;
+        border-radius: 28px;
+        // font-style: italic;
+        color: #fff;
+        background-color: $theme;
+        border: 0;
+        min-width: 287px;
+        outline: none;
+        cursor: pointer;
 
-        input[type="submit"],
-        button[type="submit"] {
-            font-family: $font;
-            font-size: 21px;
-            font-weight: 300;
-            padding: 17.5px 38px;
-            text-align: left;
-            border-radius: 28px;
-            font-style: italic;
-            color: #fff;
-            background-color: $theme;
-            border: 0;
-            min-width: 287px;
-            outline: none;
-            cursor: pointer;
-
-            &:hover {
-                background-color: $theme-light;
-            }
+        &:hover {
+            background-color: $theme-light;
         }
     }
 }
