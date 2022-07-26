@@ -171,12 +171,25 @@ function scrollMagicInit() {
 }
 
 function smooth_scroll() {
-  $(".navigation a, .navigation ~ a, .sidenav-list a, .btn-group a").on(
+  $(".btn-scroll").on(
     "click",
     function (e) {
       e.preventDefault();
       const href = $(this).attr("href");
       $("html, body").animate({ scrollTop: $(href).offset().top }, 800);
+    }
+  );
+
+  //for the navigation
+  $(".nav-list a").on(
+    "click",
+    function (e) {
+      e.preventDefault();
+      const href = $(this).attr("href");
+      $("html, body").animate({ scrollTop: $(href).offset().top }, 800);
+      $(".menu-toggle").removeClass("active");
+      $(".menu").removeClass("active");
+      $("body").removeClass("menu-open");
     }
   );
 }
