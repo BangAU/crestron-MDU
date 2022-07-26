@@ -6,6 +6,7 @@
         position: relative;
         width: 100%;
         height: 100vh;
+
         // filter: blur(11px) brightness(118%);
         transition: all .7s ease-out;
         text-align: center;
@@ -40,12 +41,14 @@
 
         img {
             @include imgfit;
+
             // height: 100vh;
+       
         }
     }
 
     &.unblur &__bg {
-        filter: none
+        filter: none;
     }
 
     &__text {
@@ -106,6 +109,10 @@
 
         @media (max-width: 1920px) {
             margin-top: 80px;
+        }
+
+        &:last-child {
+            margin-top: 10px;
         }
     }
 
